@@ -8,6 +8,16 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-		<TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
+        <StackPanel Spacing="10">
+            <Button x:Name="Basic"
+                    Content="Basic Navigation"
+                    Click="Button_Clicked" />
+            <Button x:Name="Argument"
+                    Content="Argument Navigation"
+                    Click="Button_Clicked" />
+            <Button x:Name="Animation"
+                    Content="Animation Navigation"
+                    Click="Button_Clicked" />
+        </StackPanel>
     </Grid>
 </Page>
