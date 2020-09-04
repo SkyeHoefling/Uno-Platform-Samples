@@ -1,13 +1,28 @@
 ﻿<Page
-    x:Class="CommandBarSample.Views.MainPage"
+    x:Class="CommandBarSample.Shared.Views.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-		<TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
-    </Grid>
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <CommandBar>
+
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Content="Home" Tag="Home" Icon="Save" Click="OnAppBarButtonTapped" />
+                <AppBarButton Content="Info" Tag="Info" Icon="Important" Click="OnAppBarButtonTapped" />
+                <AppBarButton Content="About" Tag="About" Icon="Emoji" Click="OnAppBarButtonTapped" />
+            </CommandBar.PrimaryCommands>
+            
+            <CommandBar.Content>
+                <TextBlock Text="CommandBar Sample" />
+            </CommandBar.Content>
+        </CommandBar>
+
+        <Frame x:Name="contentView" />
+
+    </StackPanel>
 
 </Page>
