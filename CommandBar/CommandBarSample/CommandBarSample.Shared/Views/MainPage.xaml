@@ -1,29 +1,13 @@
 ﻿<Page
-    x:Class="CommandBarSample.Views.MainPage"
+    x:Class="CommandBarSample.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:android="http://uno.ui/android"
-	xmlns:ios="http://uno.ui/ios"
-	xmlns:wasm="http://uno.ui/wasm"
-	xmlns:win="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:local="using:CommandBarSample"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
-    mc:Ignorable="d android ios wasm">
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
 
-    <StackPanel>
-        <CommandBar IsOpen="False" OverflowButtonVisibility="Collapsed" Foreground="Black" Background="LightGray">
-            <CommandBar.PrimaryCommands>
-                <AppBarButton Content="Home" Foreground="Black" Tag="Home" Icon="Save" Click="OnAppBarButtonTapped" />
-                <AppBarButton Content="About" Tag="About" Icon="Important" Click="OnAppBarButtonTapped"/>
-                <AppBarButton Content="Settings" Tag="Settings" Icon="Setting" Click="OnAppBarButtonTapped"/>
-            </CommandBar.PrimaryCommands>
-            <CommandBar.Content>
-                <Grid win:Padding="15, 0" android:Padding="0" android:VerticalOptions="Center">
-                    <TextBlock Text="CommandBar Uno Sample App" win:FontSize="25" android:FontSize="14"  />
-                </Grid>
-            </CommandBar.Content>
-        </CommandBar>
-        <Frame x:Name="ContentView" />
-    </StackPanel>
-    
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+		<TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
+    </Grid>
 </Page>
