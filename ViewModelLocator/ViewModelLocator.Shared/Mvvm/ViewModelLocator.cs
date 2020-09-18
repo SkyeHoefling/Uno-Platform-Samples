@@ -42,8 +42,8 @@ namespace ViewModelLocator.Mvvm
             if (viewType.FullName.EndsWith("Page"))
             {
                 viewName = viewType.FullName
-                .Replace("Page", string.Empty)
-                .Replace("Views", "ViewModels");
+                    .Replace("Page", string.Empty)
+                    .Replace("Views", "ViewModels");
             }
 
             var viewAssemblyName = viewType.GetTypeInfo().Assembly.FullName;
