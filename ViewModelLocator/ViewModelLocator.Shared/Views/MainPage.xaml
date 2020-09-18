@@ -11,4 +11,5 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 		<TextBlock Text="{Binding Message}" Margin="20" FontSize="30" />
     </Grid>
+    
 </Page>
