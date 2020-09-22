@@ -13,7 +13,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <StackPanel Background="#f9f9a9" Spacing="30" Padding="0, 15">
+            <StackPanel Background="#f9ffaa" Spacing="30" Padding="0, 15">
                 <StackPanel.Resources>
                     <ResourceDictionary>
                         <Style TargetType="SymbolIcon">
@@ -28,9 +28,15 @@
                 <SymbolIcon Symbol="Setting" VerticalAlignment="Bottom" />
             </StackPanel>
 
-            <Grid Grid.Column="1" Background="White">
-                <TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
-            </Grid>
+            <StackPanel Grid.Column="1" Background="White">
+                <TextBlock Text="Style Management App Sample!" Margin="20" FontSize="50" HorizontalAlignment="Center" />
+                <TextBlock
+                    Margin="20"
+                    FontSize="30"
+                    TextWrapping="WrapWholeWords"
+                    Text="This sample app demonstrates an opinionated way to manage the styles as your app grows in size. Below you will find some common controls to demonstrate a common look and feel" />
+                <Button Content="Click Me" HorizontalAlignment="Center" VerticalContentAlignment="Bottom" VerticalAlignment="Bottom" />
+            </StackPanel>
         </Grid>
     </Page.Content>
     
